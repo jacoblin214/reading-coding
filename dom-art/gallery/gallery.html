@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/layout.css" media="screen">
     <title>图片库</title>
 </head>    
 <body>
     <h1>Snapshots</h1>
     <ul>
         <li>
-            <a href="../public/images/nami.gif" title="nami" onclick="showPic(this); return false">nami</a>
+            <a href="http://ww1.sinaimg.cn/large/006i3LGmgy1fmkvkc2ytbg30dw07ttzg.gif" title="nami" onclick="showPic(this); return false">nami</a>
         </li>
         <li>
             <a href="../public/images/sanji.gif" title="Sanji" onclick="showPic(this); return false">Sanji</a>
@@ -21,6 +22,7 @@
         </li>
     </ul>
     <img id="placeholder" src="../public/images/luffy.jpg" alt="my image gallery">
+    <p id="description">Choose an image</p>
     <script type="text/javascript" src="scripts/gallery.js"></script>
 </body>
 </html> 
