@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/layout.css" media="screen">
     <title>图片库</title>
-</head>    
+</head>
+
 <body>
     <h1>Snapshots</h1>
-    <ul>
+    <ul id="imagegallery">
         <li>
-            <a href="http://ww1.sinaimg.cn/large/006i3LGmgy1fmkvkc2ytbg30dw07ttzg.gif" title="nami" onclick="showPic(this); return false">nami</a>
+            <a href="http://ww1.sinaimg.cn/large/006i3LGmgy1fmkvkc2ytbg30dw07ttzg.gif" title="nami">
+                <!-- nami -->
+                <img src="http://ww1.sinaimg.cn/thumbnail/006i3LGmgy1fmsrtb3ttrg30dw07ttzg.gif" alt="">
+            </a>
         </li>
         <li>
-            <a href="../public/images/sanji.gif" title="Sanji" onclick="showPic(this); return false">Sanji</a>
+            <a href="../public/images/sanji.gif" title="Sanji">
+                <!-- Sanji -->
+                <img src="http://ww1.sinaimg.cn/thumbnail/006i3LGmgy1fmsrtx2j5ig30dw07tkdd.gif" alt="">
+            </a>
         </li>
         <li>
-            <a href="../public/images/luffy.gif" title="luffy" onclick="showPic(this); return false">luffy</a>
+            <a href="../public/images/luffy.gif" title="luffy">
+                <!-- luffy -->
+                <img src="http://ww1.sinaimg.cn/thumbnail/006i3LGmgy1fmsrutmsq1g30dw07rao0.gif" alt="">
+            </a>
         </li>
         <li>
-            <a href="../public/images/zoro.gif" title="Zoro" onclick="showPic(this); return false">Zoro</a>
+            <a href="../public/images/zoro.gif" title="Zoro">
+                <!-- Zoro -->
+                <img src="http://ww1.sinaimg.cn/thumbnail/006i3LGmgy1fmsrv7xiphg30dw07kx4q.gif" alt="">
+            </a>
         </li>
     </ul>
-    <img id="placeholder" src="../public/images/luffy.jpg" alt="my image gallery">
-    <p id="description">Choose an image</p>
-    <script type="text/javascript" src="scripts/gallery.js"></script>
+    <script type="text/javascript" src="scripts/showPic.js"></script>
 </body>
-</html> 
+
+</html>

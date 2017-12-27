@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-20 9:26:03 am 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-12-20 9:31:10 am 
+ * @Last Modified time: 2017-12-25 9:50:27 am 
  */
 body {
     font-family: "Helvetica", "Arial", serif;
@@ -33,4 +33,16 @@ li {
 img {
     display: block;
     clear: both;
+}
+
+#imagegallery {
+    list-style: none;
+}
+
+#imagegallery li {
+    display: inline;
+}
+
+#imagegallery li a img {
+    border: 0;
 }

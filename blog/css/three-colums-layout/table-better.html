@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS移动端三列布局</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    ul,
+    li {
+        list-style: none;
+    }
+
+    .share-list-wrap {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .share-list {
+        text-align: center;
+    }
+
+    .share-item:nth-child(2) {
+        width: 60px;
+    }
+
+    .share-item-inner {
+        display: inline-block;
+        width: 60px;
+        height: 60px;        
+        background: lightblue;
+    }
+
+    
+</style>
+
+<body>
+    <h2>table方法</h2>
+    <p>设置table-layout:fixed，第二个td为60px，那么第一个和第三个自动等分剩余的空间，然后再单元格居中即可</p>
+    <table class="share-list-wrap">
+        <tr class="share-list">
+            <td class="share-item">
+                <div class="share-item-inner"></div>
+            </td>
+            <td class="share-item">
+                <div class="share-item-inner"></div>
+            </td>
+            <td class="share-item">
+                <div class="share-item-inner"></div>                
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

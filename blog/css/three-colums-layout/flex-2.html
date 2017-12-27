@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS移动端三列布局</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    ul,
+    li {
+        list-style: none;
+    }
+
+    .share-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .share-list:before,
+    .share-list:after {
+        content: '';
+    }
+
+    .share-item {
+        width: 60px;
+        height: 60px;
+        background: lightblue;
+    }
+</style>
+
+<body>
+    <ul class="share-list">
+        <li class="share-item">
+            <div class="item-inner"></div>
+        </li>
+        <li class="share-item">
+            <div class="item-inner"></div>            
+        </li>
+        <li class="share-item">
+            <div class="item-inner"></div>            
+        </li>
+    </ul>
+</body>
+
+</html>
